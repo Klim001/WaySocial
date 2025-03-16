@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'main/css/main.css'%}">
+</head>
+<body>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <aside>
+        <ul>
+            <a href="{% url 'home' %}"><li><i>Главная</i></li></a>
+            <a href="{% url 'pay' %}"><li><i>Платежи</i></li></a>
+            <a href="{% url 'contacts' %}"><li><i>Контакты</i></li></a>
+            <a href="{% url 'chat' %}"><li><i>Чат</i></li></a>
+            <a href="{% url 'settings' %}"><li><i>Настройки</i></li></a>
+        </ul>
+    </aside>
+    <div class="entry">
+        <ul><a href="{% url 'user' %}"><li><i>Вход</i></li></a> <a href="{% url 'reg' %}"><li><i>Регистрация</i></li></a></ul>
+    </div>
+</body>
+</html>

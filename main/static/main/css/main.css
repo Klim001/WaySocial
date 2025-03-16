@@ -1,0 +1,24 @@
+body {
+    background: #709775;
+}
+aside {
+    float: left;
+    background: #008000;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #008000;
+    border-right: 5px solid #111d13
+}
+aside ul li{
+    background: #008000;
+    color: #555555;
+    width: 20%;
+}
+.container {
+    float: right;
+    width: 60%;
+}
+.entry {
+    float: right;
+}
